@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+      </style>
+    <style>
+      .centre {
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+}
+      body {background-color: black;}
+      button  {background-color: black; border: none; }
+      h1   {color: darkred; font-family: "Permanent Marker"; font-size: 30vmin;text-align: center;}
+      </style>
+  
+<link rel="modulepreload" href="/davyd-6b83ff0cfd17fbdd.js" crossorigin=anonymous integrity="sha384-YWVo1fNZ6bzG7tlpBn5KF34CIbxmgEbOYrlA8EZP4BzutzPlfUGHd2zI/CJnY4yL">
+<link rel="preload" href="/davyd-6b83ff0cfd17fbdd_bg.wasm" crossorigin=anonymous integrity="sha384-uaGbRMO2ewzyDvNtIra+5/oVGNe8K1gP28wOhzPGSLBxBFiEUU5Ezj58XHgqHnEm" as="fetch" type="application/wasm"></head>
+  <body>
+<script type="module" nonce="1jni9fQyDcpt6okOnQUCeg==">
+import init, * as bindings from '/davyd-6b83ff0cfd17fbdd.js';
+const wasm = await init('/davyd-6b83ff0cfd17fbdd_bg.wasm');
+
+
+window.wasmBindings = bindings;
+
+
+dispatchEvent(new CustomEvent("TrunkApplicationStarted", {detail: {wasm}}));
+
+</script></body>
+</html>
